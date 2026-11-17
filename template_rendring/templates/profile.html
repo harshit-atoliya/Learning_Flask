@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{name}}'s profile</title>
+</head>
+<body>
+    <h2>Hello , {{name}}!</h2> 
+    
+    {%if is_topper%}
+    <p>You are a topper</p> 
+    {%else%}
+    <p>You are not a topper</p>
+    {%endif%}
+    
+    {%for subject in subjects%}
+    <li>{{subject}}</li>
+    {%endfor%}
+</body>
+</html>
